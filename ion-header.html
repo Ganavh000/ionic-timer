@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Ionic Timer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center">
+  <div style="font-size: 4rem; margin-top: 50px;">
+    {{ timeDisplay }}
+  </div>
+
+  <div style="margin-top: 30px;">
+    <ion-button (click)="startTimer()" [disabled]="isRunning" color="success">
+      Start
+    </ion-button>
+    <ion-button (click)="stopTimer()" color="danger">
+      Stop
+    </ion-button>
+    <ion-button (click)="resetTimer()" color="medium">
+      Reset
+    </ion-button>
+  </div>
+</ion-content>
